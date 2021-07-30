@@ -1,0 +1,43 @@
+<!--{% extends "parent.html" %}-->
+
+    {% block contents %}
+    <form name="form1" method="post" action="addrectomongo">
+      <table align="center" border="5" bgcolor="#F0F0F0">
+        <caption align="top">
+          <h2>Registration Form</h2>
+        </caption>
+        <tr>
+          <td>Name</td>
+          <td><input name="name" type="text" size="75"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td><input type="text" name="gender" /></td>
+        </tr>
+        <tr>
+          <td>Mobile</td>
+          <td><input type="text" name="mobile"></td>
+        </tr>
+        <tr>
+          <td>UserID</td>
+          <td><input type="text" name="user"></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td><textarea name="textarea" cols="50"></textarea></td>
+        </tr>
+        <tr>
+          <td>Course</td>
+          <td><input name="course" type="text" id="course"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input name="pwd" type="password" id="pwd" size="10"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" name="Submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+    {% endblock %}

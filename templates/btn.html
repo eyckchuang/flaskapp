@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{url_for('static',filename='myscript.js')}}"></script>
+</head>
+<body>
+  <h1>{{name}}</h1>
+  <input type="hidden" id="nmId" name="name" value="{{name}}">
+  <input type="image" name="button1" onclick="myfunction(this.id)" id="button1" src="{{url_for('static',filename='checkmark.png')}}">
+  <input type="image" name="button2" onclick="myfunction(this.id)" id="button2" src="{{url_for('static',filename='cancle.png')}}">
+
+</body>
+</html>

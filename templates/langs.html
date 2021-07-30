@@ -1,0 +1,27 @@
+{% macro result(student) -%}
+<tr>
+  <td>{{ student[0] }}</td>
+  <td>{{ student[1] }}</td>
+  {% if student[1]>=50 %}
+  <td>Pass</td>
+  {% else %}
+  <td>Fail</td>
+  {% endif %}
+</tr>
+{%- endmacro %}
+
+<!doctype html>
+<html>
+  <body>
+    <h2>Mark List</h2>
+    <table border="1">
+      <col width="50">
+      <col width="50">
+      <col width="50">
+        {% for students in students %}
+        {{ result(students)}}
+        {% endfor %}
+    </table>
+  </body>
+</html>
+

@@ -1,0 +1,22 @@
+{% extends "parent.html" %}
+    {% block contents %}
+    <form name="form1" method="post" action="">
+      <table align="center" border="5" bgcolor="#F0F0F0">
+        <caption align="top">
+          <h2>Login</h2>
+        </caption>
+        <tr>
+          <td>UserID</td>
+          <td><input type="text" name="uid"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="pswd" size="10"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" name="Submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+    {% endblock %}

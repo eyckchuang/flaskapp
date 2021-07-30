@@ -12,7 +12,6 @@ from __init__ import create_app, db
 from myform import AdmissionForm, LoginForm
 
 from flask_login import LoginManager, login_required, current_user, login_user, logout_user
-from flask_uploads import UploadSet, configure_uploads, DATA, IMAGES
 
 # app = Flask(__name__)
 
